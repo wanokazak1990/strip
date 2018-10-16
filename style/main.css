@@ -1,0 +1,295 @@
+body{
+	font-family: 'Poiret One', sans-serif;
+	background: #000 !important;
+	color:#fff;
+}
+.red{background: #f00;}
+.green{background: #0f0;}
+.yellow{background: #ff0;}
+.blue{background: #00f;}
+.black{background: #000;}
+.unk{background: #0ff;}
+.navbar{background: linear-gradient(to right, rgba(10,0,0,0.8), rgba(20,0,0,0.8));}
+.nav-link {color:#e5a967 !important;font-family: 'Poiret One';font-size: 20px;}
+.nav-link:hover{color:#fc3 !important;}
+.navbar-brand span{color: #e5a967;}
+.carousel-item{height: 100vh;overflow: hidden; text-align: center;}
+.carousel-item img{height: 100%;width: auto !important; margin:auto;animation: scaleimg 10s linear infinite;}
+@keyframes scaleimg{
+	0%{
+		transform: scale(1,1);
+	}
+	50%{
+		transform: scale(1.05,1.05);
+	}
+	100%{
+		transform: scale(1,1);
+	}
+}
+.slider-text{height: 100%;position: absolute;top:0px;left: 0px; width: 100%;font-family: 'Roboto', sans-serif;text-transform: uppercase;pointer-events: none;}
+.slider-text h1{
+	font-size: 7em;
+	font-weight: 700;
+	color:#fff;
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+     	0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.slider-text .slogan{
+	color:#fff;
+	font-size: 2em;
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+     	0px -5px 35px rgba(255,255,255,0.3);
+}
+.slider-text .slogan span{
+	font-weight: 700;
+}
+.slider-text .slogan:after
+{
+	content: "";
+	
+	display: block;
+	width: 300px;
+	height: 0px;
+	border-bottom: 2px solid #f33;
+	margin: auto;
+	margin-top: 20px;
+	box-shadow: 0 0 5px #f33;
+}
+.slider-text .main-phone{
+	color: #fff;
+	font-size: 2em;
+	font-weight: 700;
+	text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+     	0px -5px 35px rgba(255,255,255,0.3);
+}
+
+@media screen and (max-width: 700px)
+{
+	.slider-text h1{font-size: 2em}
+	.slider-text .slogan{font-size: 1.5em;}
+	.slider-text .main-phone{font-size:1.5em;}
+}	
+
+.block{
+	padding-bottom: 50px;
+	padding-top: 20px;
+}
+.block-title{
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Poiret One', cursive;
+	color: #e5a967;
+}
+.block-title:after{
+	content: "";
+	display: block;
+	width: 150px;
+	height: 0px;
+	border-bottom: 1px solid #333;
+	margin:auto; 
+}
+.block-slogan{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Poiret One', cursive;
+	color: #888;
+	padding-bottom: 30px;
+}
+.big-slogan{
+	font-size: 40px;
+	color: #e5a967;
+	font-family: 'Poiret One';
+}
+.icon-about{
+	font-family: 'Poiret One', cursive;
+	font-weight: 100;
+	font-size: 20px; 
+	padding-top: 60px;
+}
+.icon-about i{
+	display: block;
+	font-size: 100px;
+	margin-bottom: 25px;
+	color: #e5a967;
+}
+.icon-about .icon{
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: color 0.5s linear;
+	color: #ccc;
+}
+.icon-about .icon:hover{
+	
+}
+
+
+.girls{
+	background: #000;
+	background-image: url('../images/fon.jpg');
+	background-position: center top;
+	background-size: cover;
+	position: relative;
+}
+.girls img{
+	width: 100%;
+}
+.girls-block:hover {cursor: pointer;position: relative;}
+
+.girls-block .desc {display: none; text-align: center; }
+.girls-block:hover .desc {
+	background: rgba(0,0,0,0.7);
+	display: block;
+	margin: 0;
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%; height: 100%;
+	opacity: 1;
+}
+.girls-block .desc h3{
+	text-transform: uppercase;
+	font-family: 'Poiret One', cursive;
+}
+.girls-block .desc p{
+	font-family: 'Poiret One', cursive;
+	font-size: 20px;
+}
+.girls-block:hover .desc strong {
+	display: block;
+	font-size: 14px;
+	line-height: 1em;
+}
+.shadow{
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: -2px;
+	background: linear-gradient(to top,#000,transparent);
+}
+
+.banner {
+	background: url('../images/bg-banner.jpg');
+	background-size: cover;
+}
+.banner .col-sm-3{
+	padding: 0px;
+	
+}
+.banner .banner-title{
+	padding: 20px;
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 150px;
+	padding-top: 150px;
+	display: block;
+	font-family: 'Poiret One';
+}
+.banner-div-1{
+	background: rgba(50,0,0,0.6);
+}
+.banner-div-2{
+	background: rgba(0,0,50,0.6);
+}
+.banner-div-3{
+	background: rgba(0,50,0,0.6);
+}
+.banner-div-4{
+	background: rgba(50,0,50,0.6);
+}
+
+.pravila li{
+	color: #ccc;
+	font-family: 'Poiret One';
+	font-size: 18px;
+	margin-bottom: 5px;
+	list-style: decimal outside;
+}
+
+.programm .col-md-3{
+	cursor: pointer;
+	overflow: hidden;
+}
+@media screen and (min-width: 900px)
+{
+	.programm .col-md-3{
+		padding: 0px;
+	}
+}
+.programm-block{
+	position: relative;
+	overflow: hidden;
+}
+.programm img{
+	width: 100%;
+	filter: grayscale(0.5);
+	transition: transform 0.3s linear, filter 0.3s linear;
+}
+.programm .programm-block div{
+	
+	color: #aaa;
+	font-family: 'Poiret One';
+	font-size: 25px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0%;
+	left: 0px;
+}
+.programm .col-md-3:nth-child(n) div{
+	background: rgba(0,0,0,0.8);
+}
+.programm .col-md-3:nth-child(2n) div{
+	background: rgba(0,0,0,0.8);
+}
+.programm .col-md-3:nth-child(3n) div{
+	background: rgba(0,0,0,0.8);
+}
+.programm .col-md-3:hover img{
+	transform: scale(1.1,1.1);
+	filter: grayscale(0);
+}
+.programm .col-md-3:hover div{
+	background: rgba(229,168,103,0.5);
+	color: #000;
+}
+
+.afisha{
+
+}
+.afisha-block{
+	padding: 0px !important;
+
+}
+.afisha img{
+	width: 100%;
+	display: block;
+}
+.afisha .back{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	background: url('../images/afon.jpg');
+	background-size: cover;
+}
+.afisha .back div{
+	width: 100%;
+}
+.afisha .back .title{
+	color: #ddd;
+	font-family: 'Poiret One';
+	font-size: 25px;
+	padding-bottom: 15px;
+}
+#mygallery img{
+	opacity: 0.2 !important;
+	transition: opacity 0.5s linear;
+}
+#mygallery img:hover{
+	opacity: 1 !important;
+}
